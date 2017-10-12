@@ -6,12 +6,11 @@
 
 % document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
-\usepackage{hyperref}
+\usepackage{hyperref, latexsym}
 
 \name{Anna Ho} % Your name
-\address{ah@astro.caltech.edu} % Your phone number and email
-\address{Citizenship: US, UK}
-\address{Caltech, MC 249-17, 1200 E. California Blvd., Pasadena CA 91125}
+\address{ah@astro.caltech.edu $\diamond$ (650) 338-9762} % Your phone number and email
+%\address{(650) 338-9762}
 
 \begin{document}
 
@@ -21,21 +20,43 @@
 
 \begin{rSection}{Education}
 
-{\bf California Institute of Technology (Caltech)}, Pasadena CA
-\begin{itemize}
-  \item Ph.D., Astrophysics \hfill \emph{expected June 2020}
+\begin{rSubsection}
+  {Ph.D., Astrophysics, California Institute of Technology (Caltech)}{expected June 2020}{}{}
 \item Graduate coursework includes: 
   Physics of Measurement, Mathematical Methods of Physics,
   High-Energy Astrophysics, Astronomical Measurements and Instrumentation
-\end{itemize}
+\end{rSubsection}
 
-{\bf Massachusetts Institute of Technology (MIT)}, Cambridge MA
-\begin{itemize}
-\item B.S., Physics, GPA 4.5/5.0 \hfill {\em June 2014}
+\begin{rSubsection}
+  {B.S., Physics, Massachusetts Institute of Technology (MIT)}{June 2014}
+  {}{Cambridge MA}
+\item GPA 4.5/5.0 
 \item Coursework includes: Differential Equations, Linear Algebra,
   Classical Mechanics II, Quantum Physics II-III,
-  Modern Space Science and Engineering, Experimental Physics
-\end{itemize}
+  Modern Space Science and Engineering, Experimental Physics,
+  Science Journalism
+\end{rSubsection}
+
+\end{rSection}
+
+
+%------------------------------------------------------------------------------
+%   SKILLS SECTION
+%------------------------------------------------------------------------------
+
+\begin{rSection}{Skills Summary}
+  \begin{rSubsection}{Languages}{}{}{}
+    \item French and German (limited working proficiency)
+  \end{rSubsection}
+
+  \begin{rSubsection}{Programming Languages}{}{}{}
+    \item Fluent Python, %(\texttt{numpy}, \texttt{SciPy}, \texttt{Matplotlib}),
+      Intermediate Java and MATLAB, Beginning SQL and Mathematica
+  \end{rSubsection}
+
+  \begin{rSubsection}{Tools}{}{}{}
+    \item Comfortable with Linux, git, Vim
+  \end{rSubsection}
 
 \end{rSection}
 
@@ -46,16 +67,14 @@
 
 \begin{rSection}{Research Projects}
   \begin{rSubsection}{Data-Driven Modeling for Large Datasets of Spectra}
-    {2014-17}{}{}
+    {2014-17}{Max Planck Institute for Astronomy \& Caltech}{}
   \item 
-    Full-time research as a graduate student at Caltech and a Fulbright
-    Scholar at the Max Planck Institute for Astronomy in Heidelberg, Germany
+    Full-time research as a graduate student and a Fulbright Scholar 
   \item
     Wrote \href{https://github.com/annayqho/TheCannon}{open-source code} in Python to model large datasets of spectra
   \item
-    On invitation, designed and taught a two-day Python workshop on modeling
-    specta, at Gemini Observatory in La Serena, Chile.
-    Audience include 13 graduate students, post docs, and faculty.
+    On invitation, designed and taught a two-day workshop %Python workshop on modeling spectra
+    at Gemini Observatory in Chile %La Serena, Chile
   \item
     Presented at five international conferences
   \item
@@ -63,14 +82,12 @@
 \end{rSubsection}
 
 \begin{rSubsection}{Pulsars as a Probe of Magnetic Fields and Plasma Physics}{2012-14}{National Radio Astronomy Observatory}{Charlottesville VA}
-  \item
-    Full-time research as a summer intern 
   \item 
     Wrote \href{https://github.com/annayqho/ter5-RMs}{open-source code} in Python to measure the 
     galaxy's magnetic field using radio data
   \item Wrote a successful application for observing time on the 
     Very Large Array in New Mexico
-  \item Presented work as a poster at two
+  \item Presented poster on method and results at two
     American Astronomical Society conferences,
     and at the National Science Foundation (NSF) Conference of 
     Research Experiences for Undergraduates
@@ -83,22 +100,22 @@
 %------------------------------------------------------------------------------
 
 \begin{rSection}{Honors and Awards}
-
-\begin{itemize}
+  \vspace{-10pt}
+  \begin{rSubsection}{}{}{}{}
 \item
 National Science Foundation Graduate Research Fellowship \hfill {\em 2014-19}
 \item
 Fulbright Scholarship \hfill {\em 2014-15}
 \item
-  Karl Taylor Compton Prize, MIT: \hfill {\em 2014} \\
-``the highest awards presented by the Institute\ldots
-in recognition of excellent achievements in citizenship 
-and devotion to the welfare of MIT\ldots
-sustained over a significant number of years.'' 
+  Karl Taylor Compton Prize, MIT: 
+  (``the highest awards presented by the Institute\ldots in \hfill {\em 2014} \\
+recognition of excellent achievements in citizenship\ldots
+%and devotion to the welfare of MIT\ldots
+sustained over a significant number of years.'')
 \item
 First Place, Dewitt Wallace Prize for Science Writing for the Public, 
 MIT \hfill {\em 2013} 
-\end{itemize}
+\end{rSubsection}
 
 \end{rSection}
 
@@ -116,8 +133,8 @@ MIT \hfill {\em 2013}
 
   \begin{rSubsection}{Teaching Assistant, Caltech and MIT} 
     {2013-present}{}{MIT \& Caltech}
-  \item Grade student work, hold office hours, LaTeX lecture notes
-    for undergraduate and graduate courses
+  \item Graduate radio astronomy, undergraduate introductory astronomy,
+    quantum mechanics I \& II
   \end{rSubsection}
 
   \begin{rSubsection}{Teacher for K-12 Educational Programs}
@@ -125,27 +142,13 @@ MIT \hfill {\em 2013}
   \item Educational Studies Program at MIT,
     Institute for Educational Advancement in Pasadena:
     designed and taught science
-    classes for over 500 K-12 students.
+    classes for over 500 K-12 students
   \item MIT/Teach For America:
     teaching assistant on
     the Pueblo Pintado Navajo Reservation in New Mexico. 
     Created new modules for the math curriculum, 
-    tutored and mentored students.
+    tutored and mentored students
   \end{rSubsection}
-
-  \begin{rSubsection}{AAS Astronomy Ambassadors Workshop}{January 2014}
-  {American Astronomical Society 223rd Meeting}{National Harbor, MD}
-  \item One of 30 astronomers selected for professional development workshop on effectively communicating science with the public
-  \end{rSubsection}
-
-  \begin{rSubsection}{McCormick Public Observatory}{Summer 2012, Summer 2013}
-    {Public speaker and volunteer}{Charlottesville, VA}
-  \item Ran a volunteering program for National Radio Astronomy Observatory summer interns
-  \end{rSubsection}
-
-\end{rSection}
-
-\begin{rSection}{Writing}
 
   \begin{rSubsection}
     {Haus der Astronomie}{Sept 2014-July 2015}
@@ -157,18 +160,26 @@ MIT \hfill {\em 2013}
   \end{rSubsection}
 
   \begin{rSubsection}{MIT Admissions Blogger}{Fall 2010-Spring 2014}
-    {MIT Admissions Office}{Cambridge, MA}
+    {}{}
   \item Wrote \href{http://mitadmissions.org/blogs/profile/annayq}{weekly entries} read by over 7,000 daily, corresponded with students through webcasts
   \end{rSubsection}
 
-\end{rSection}
+  \begin{rSubsection}{AAS Astronomy Ambassadors, American Astronomical Society}{January 2014}{}{}
+  \item One of 30 astronomers selected for professional development workshop on effectively communicating science with the public
+  \end{rSubsection}
 
+  \begin{rSubsection}{McCormick Public Observatory, Charlottesville VA}
+    {Summer 2012, Summer 2013}{}{}
+  \item Ran a volunteering program for National Radio Astronomy Observatory summer interns
+  \end{rSubsection}
+
+\end{rSection}
 
 \begin{rSection}{Leadership}
 
   \begin{rSubsection}{Science-Engineering-Technology Congressional Visits Day (SETCVD)}{March 2014}{}{Washington, DC}
   \item The only undergraduate student selected to represent the American Astronomical Society
-  \item On Capitol Hill, two days of training and workshops about the federal budgeting process 
+  \item Two days of training and workshops on Capitol Hill, about the federal budgeting process 
   \item Set up and led meetings with Congressional Staff to advocate for federal funding for research 
   \end{rSubsection}
 
@@ -185,11 +196,6 @@ MIT \hfill {\em 2013}
 \item Supervised committees and officers, represented dormitory to Undergraduate Association and Dormitory Council, ran events to provide a residential support system for students
 \end{rSubsection}
 
-\end{rSection}
-
-\begin{rSection}{Technical Skills}
-\item Python since 2012, one year of Java, one year of MATLAB
-\item Comfortable in Linux, git, Vim
 \end{rSection}
 
 \end{document}
